@@ -1,0 +1,4 @@
+openpyxl==2.3.5
+python-redmine==1.5.1
+PyYAML==3.11
+logging

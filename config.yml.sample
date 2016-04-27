@@ -1,0 +1,19 @@
+redmine:
+  url: "https://redmine.com" # Fully qualified URL to the redmine installation
+  username: # Administrator account's credentials. Keep blank to use an API-key
+  password: # Keep blank to use an API-key
+  api-key: 1234567890123456789012345678901234567890 # Administrator account's API key
+project:
+  spreadsheet:
+    path: my-project-tasks.xlsx # Path to the excel file containing the tasks
+    sheet-name: Task_Data # The sheet's name within the workbook
+    map: # Map the following fields to columns within the workbook. Optional fields can be mapped to empty columns.
+      wbs: A # [Required] Work breakdown structure (e.g.: A.b.b or 1.1.2) used to identify parent-child relationships.
+      id: B # [Required]  Unique identifier for every task in the spreadsheet.
+      subject: C # [Required] Maps to issue titles in redmine
+      start-date: E # [Optional] Date formatted field
+      due-date: F # [Optional] Date formatted field
+      assignee: H # [Optional] String value formatted as "firstname lastname".
+      predecessor: G # [Optional] Comma seperated string that maps to the identifier field. (e.g.: 1,2)
+  id: my-project # Redmine's project identifier
+  tracker-id: 4 # Tracker identifier that will be assigned to all tasks.
