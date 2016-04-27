@@ -19,11 +19,13 @@ Limitations:
 
 The following installation procedures require git, Python 2.7, virtualenv, and pip.  Please ensure these are installed prior to proceeding.
 
-	git clone https://github.com/AAFC-MBB/xlsx2redmine
-	cd xlsx2redmine
-	virtualenv venv
-	source venv/bin/activate
-	pip install -r requirements.txt
+```bash
+git clone https://github.com/AAFC-MBB/xlsx2redmine
+cd xlsx2redmine
+virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
 
 ## Usage
 
@@ -84,7 +86,7 @@ Author(s):
 * Iyad Kandalaft <iyad.kandalaft@canada.ca>
 
 Contriutor(s):
-This work would not be possible without the author of the "Python Redmine":https://github.com/maxtepkeev/python-redmine project.
+* This work would not be possible without the author of the [Python Redmine](https://github.com/maxtepkeev/python-redmine) project
 
 ## License
 
